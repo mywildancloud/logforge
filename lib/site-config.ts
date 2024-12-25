@@ -7,7 +7,7 @@ export const siteConfig = {
   nav: {
     main: [
       {
-        title: "Home",
+        title: "Changelog",
         href: "/"
       },
       {
