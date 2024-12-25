@@ -5,6 +5,7 @@ import { ChangelogFilter } from "@/components/changelog-filter";
 import { SearchBar } from "@/components/search-bar";
 import { PoweredBy } from "@/components/layout/powered-by";
 import { Pagination } from "@/components/pagination";
+import { NoResults } from "@/components/no-results";
 import { useState, useMemo } from "react";
 import { changelogData } from "@/lib/data";
 import { usePagination } from "@/lib/hooks/use-pagination";
@@ -48,9 +49,13 @@ export default function Home() {
           </div>
 
           <div className="space-y-8 pt-4">
-            {currentItems.map((entry, index) => (
-              <ChangelogEntry key={`${entry.version}-${index}`} {...entry} />
-            ))}
+            {filteredChangelog.length > 0 ? (
+              currentItems.map((entry, index) => (
+                <ChangelogEntry key={`${entry.version}-${index}`} {...entry} />
+              ))
+            ) : (
+              <NoResults searchQuery={searchQuery} />
+            )}
           </div>
 
           {totalPages > 1 && (
