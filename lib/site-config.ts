@@ -24,18 +24,18 @@ export const siteConfig = {
     social: [
       {
         title: "GitHub",
-        href: "https://github.com",
+        href: "https://github.com/mywildancloud",
         icon: "github"
       },
       {
-        title: "Twitter",
-        href: "https://twitter.com",
-        icon: "twitter"
+        title: "Instagram",
+        href: "https://www.instagram.com/wildan.nrs/",
+        icon: "instagram"
       },
       {
-        title: "LinkedIn",
-        href: "https://linkedin.com",
-        icon: "linkedin"
+        title: "Youtube",
+        href: "https://www.youtube.com/@wildan.nrs_",
+        icon: "youtube"
       }
     ]
   },

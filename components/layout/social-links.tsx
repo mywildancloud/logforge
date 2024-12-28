@@ -1,13 +1,13 @@
 "use client";
 
-import { Github, Twitter, Linkedin, LucideIcon } from "lucide-react";
+import { Github, Instagram, Youtube, LucideIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { siteConfig } from "@/lib/site-config";
 
 const icons: Record<string, LucideIcon> = {
   github: Github,
-  twitter: Twitter,
-  linkedin: Linkedin,
+  instagram: Instagram,
+  youtube: Youtube,
 };
 
 export function SocialLinks() {
