@@ -55,13 +55,6 @@ To run Logrofge on your local machine:
 2. **Access the Application**
    Open your browser and navigate to `http://localhost:3000`.
 
-3. **Environment Variables**
-   Create a `.env.local` file in the root directory and configure your environment variables as needed:
-   ```env
-   LOGROFGE_API_URL=http://localhost:3000/api
-   LOGROFGE_DB_URL=your-database-connection-string
-   ```
-
 ---
 
 ## Deploying to Vercel
@@ -75,14 +68,7 @@ Deploy Logrofge to Vercel for production use:
    - Go to the Vercel dashboard.
    - Click on `New Project` and import the `logrofge` repository from GitHub.
 
-3. **Set Environment Variables**
-   Configure your environment variables in the Vercel dashboard under `Settings > Environment Variables`.
-   ```env
-   LOGROFGE_API_URL=https://your-vercel-deployment-url/api
-   LOGROFGE_DB_URL=your-production-database-connection-string
-   ```
-
-4. **Deploy**
+3. **Deploy**
    Click on `Deploy` to start the deployment process. Once deployed, you will get a production URL to access Logrofge.
 
 ---
