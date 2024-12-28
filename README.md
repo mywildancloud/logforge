@@ -1,17 +1,28 @@
 # Logrofge
 
-Logrofge is a modern and efficient logging tool designed to streamline the process of monitoring and managing application logs. With Logrofge, you can easily integrate logging into your applications, monitor in real-time, and deploy your logging system locally or to the cloud with Vercel.
+Logrofge is a modern and efficient logging tool designed to streamline the process of monitoring and managing application logs.
 
 ---
 
 ## Features
 
-- **Real-time Logging**: Capture logs in real-time for faster debugging and analysis.
-- **Customizable Configuration**: Easily configure logging levels and destinations.
-- **Scalable Deployment**: Run Logrofge locally or deploy it to Vercel for production-ready logging.
-- **User-Friendly Interface**: Simplified UI for managing and viewing logs.
-- **Secure Logging**: Keep your logs private with built-in security measures.
-- **Integration Ready**: Compatible with various frameworks and platforms.
+- **Built with Next.js, TypeScript, and TailwindCSS:** Ensuring a robust and scalable foundation.
+
+- **Easy Content Management:** Simplify the management of logs and related content.
+
+- **Modern User Interface Design:** Provides an intuitive and visually appealing experience.
+
+- **Clean and Maintainable Code Structure:** Facilitates easy development and scalability.
+
+- **Ajax Live Search:** Real-time search functionality for faster access to logs.
+
+- **Dark and Light Theme Support:** Choose between dark and light modes for better usability.
+
+- **Sorting by Category:** Organize and access logs efficiently.
+
+- **Responsive Design:** Optimized for desktop, tablet, and mobile devices.
+
+- **Manage Categories, Versions, Publish Dates, and Log Details:** Tailored for applications like Laravel, SaaS, and WordPress.
 
 ---
 
