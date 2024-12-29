@@ -54,8 +54,8 @@ export default function HomePage() {
           </p>
           <div className="space-x-4">
             <Button size="lg" asChild>
-              <Link href="#features">
-                Get Started
+              <Link href="/changelog">
+                View a Demo
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
