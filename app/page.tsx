@@ -52,7 +52,7 @@ export default function HomePage() {
             A modern project management tool that helps you track and share project updates effortlessly.
             Perfect for remote teams and async communication.
           </p>
-          <div className="space-x-4">
+          <div className="grid grid-col-2 gap-4 sm:flex">
             <Button size="lg" asChild>
               <Link href="/changelog">
                 View a Demo
