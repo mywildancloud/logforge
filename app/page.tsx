@@ -71,7 +71,7 @@ export default function HomePage() {
       {/* Features Section */}
       <section
         id="features"
-        className="container space-y-6 bg-slate-50 py-20 px-4"
+        className="container space-y-6 bg-slate-50 dark:bg-transparent py-20 px-4"
       >
         <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
           <h2 className="font-bold text-3xl leading-[1.1] sm:text-3xl md:text-6xl">
