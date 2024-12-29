@@ -10,7 +10,7 @@ export function PoweredBy() {
       rel="noopener noreferrer"
       className="flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground transition-colors"
     >
-      Powered by Logforge
+      Powered by ReviseLog
       <ExternalLink className="h-3 w-3" />
     </a>
   );
