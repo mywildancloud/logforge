@@ -4,6 +4,8 @@ UpdateFlow is a modern and efficient logging tool designed to streamline the pro
 
 ---
 
+![UpdateFlow](https://update-flow.vercel.app/og-image.png)
+
 ## Features
 
 - **Built with Next.js, TypeScript, and TailwindCSS:** Ensuring a robust and scalable foundation.

@@ -8,7 +8,7 @@ export const siteConfig = {
     main: [
       {
         title: "Changelog",
-        href: "/"
+        href: "/changelog"
       },
       {
         title: "Documentation",

@@ -1,76 +1,104 @@
 "use client";
 
-import { ChangelogEntry } from "@/components/changelog-entry";
-import { ChangelogFilter } from "@/components/changelog-filter";
-import { SearchBar } from "@/components/search-bar";
-import { PoweredBy } from "@/components/layout/powered-by";
-import { Pagination } from "@/components/pagination";
-import { NoResults } from "@/components/no-results";
-import { useState, useMemo } from "react";
-import { changelogData } from "@/lib/data";
-import { usePagination } from "@/lib/hooks/use-pagination";
-import { ITEMS_PER_PAGE } from "@/lib/constants";
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+import { ArrowRight, FileText, GitPullRequest, MessageSquare, RefreshCw, Users, Zap } from "lucide-react";
+import Link from "next/link";
 
-export default function Home() {
-  const [filter, setFilter] = useState("all");
-  const [searchQuery, setSearchQuery] = useState("");
+const features = [
+  {
+    icon: FileText,
+    title: "Project Templates",
+    description: "Ready-to-use templates for different types of project updates",
+  },
+  {
+    icon: Users,
+    title: "Team Collaboration",
+    description: "Work together seamlessly with your team members",
+  },
+  {
+    icon: MessageSquare,
+    title: "Async Communication",
+    description: "Perfect for remote teams across different time zones",
+  },
+  {
+    icon: RefreshCw,
+    title: "Auto Sync",
+    description: "Changes sync automatically across all devices",
+  },
+  {
+    icon: Zap,
+    title: "Quick Updates",
+    description: "Share project updates in seconds, not minutes",
+  },
+  {
+    icon: GitPullRequest,
+    title: "Version History",
+    description: "Track all changes with detailed version history",
+  },
+];
 
-  const filteredChangelog = useMemo(() => {
-    return changelogData.filter((entry) => {
-      const matchesFilter = filter === "all" || entry.category === filter;
-      const searchTerm = searchQuery.toLowerCase();
-      const matchesSearch = entry.title.toLowerCase().includes(searchTerm) ||
-        entry.description.toLowerCase().includes(searchTerm);
-      return matchesFilter && matchesSearch;
-    });
-  }, [filter, searchQuery]);
-
-  const {
-    currentItems,
-    currentPage,
-    totalPages,
-    handlePageChange,
-  } = usePagination(filteredChangelog, ITEMS_PER_PAGE);
-
+export default function HomePage() {
   return (
-    <main className="min-h-screen bg-background">
-      <div className="mx-auto max-w-[1300px] px-4 py-12">
-        <div className="space-y-8">
-          <div className="space-y-4">
-            <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">Changelog</h1>
-            <p className="text-muted-foreground text-base sm:text-lg max-w-[600px]">
-              New updates and improvements to our platform.
-            </p>
-          </div>
-
-          <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-            <SearchBar onSearch={setSearchQuery} />
-            <ChangelogFilter currentFilter={filter} onFilterChange={setFilter} />
-          </div>
-
-          <div className="space-y-8 pt-4">
-            {filteredChangelog.length > 0 ? (
-              currentItems.map((entry, index) => (
-                <ChangelogEntry key={`${entry.version}-${index}`} {...entry} />
-              ))
-            ) : (
-              <NoResults searchQuery={searchQuery} />
-            )}
-          </div>
-
-          {totalPages > 1 && (
-            <Pagination
-              currentPage={currentPage}
-              totalPages={totalPages}
-              onPageChange={handlePageChange}
-            />
-          )}
-
-          <div className="flex justify-center pt-8">
-            <PoweredBy />
+    <><main className="mx-auto max-w-[1300px]">
+      {/* Hero Section */}
+      <section className="space-y-6 pb-8 pt-6 py-12 px-4 md:pb-12 md:pt-10 lg:py-32">
+        <div className="container flex max-w-[64rem] flex-col items-center gap-4 text-center mx-auto">
+          <h1 className="font-bold text-3xl sm:text-5xl md:text-6xl lg:text-7xl">
+            Simplify Your Project Updates with{" "}
+            <span className="text-green-600">UpdateFlow</span>
+          </h1>
+          <p className="max-w-[42rem] leading-normal text-muted-foreground sm:text-xl sm:leading-8">
+            A modern project management tool that helps you track and share project updates effortlessly.
+            Perfect for remote teams and async communication.
+          </p>
+          <div className="space-x-4">
+            <Button size="lg" asChild>
+              <Link href="#features">
+                Get Started
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Link>
+            </Button>
+            <Button size="lg" variant="outline" asChild>
+              <Link href="https://github.com/mywildancloud/updateflow" target="_blank">
+                View on GitHub
+              </Link>
+            </Button>
           </div>
         </div>
-      </div>
-    </main>
+      </section>
+
+      {/* Features Section */}
+      <section
+        id="features"
+        className="container space-y-6 bg-slate-50 py-12 px-4 dark:bg-transparent md:py-20"
+      >
+        <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
+          <h2 className="font-bold text-3xl leading-[1.1] sm:text-3xl md:text-6xl">
+            Key Features
+          </h2>
+          <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
+            Everything you need to manage your project updates effectively
+          </p>
+        </div>
+        <div className="mx-auto grid justify-center gap-4 sm:grid-cols-2 md:max-w-[64rem] md:grid-cols-3">
+          {features.map((feature) => {
+            const Icon = feature.icon;
+            return (
+              <Card key={feature.title} className="flex flex-col justify-between p-6">
+                <div>
+                  <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
+                    <Icon className="h-6 w-6 text-primary" />
+                  </div>
+                  <h3 className="font-bold">{feature.title}</h3>
+                  <p className="text-muted-foreground">{feature.description}</p>
+                </div>
+              </Card>
+            );
+          })}
+        </div>
+      </section>
+      </main>
+    </>
   );
 }
