@@ -12,8 +12,8 @@ export function ScrollProgress({ progress }: ScrollProgressProps) {
   return (
     <svg
       className="absolute inset-0 -rotate-90 transform"
-      width="0"
-      height="0"
+      width="auto"
+      height="auto"
       viewBox="0 0 40 40"
     >
       <circle
