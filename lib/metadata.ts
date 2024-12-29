@@ -38,7 +38,7 @@ export function constructMetadata({
       title,
       description,
       images: [image],
-      creator: "@logforge",
+      creator: "@wildan.nrs",
     },
     icons,
     metadataBase: new URL(siteConfig.url),

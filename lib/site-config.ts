@@ -3,7 +3,7 @@ import { NavigationItem } from "./types";
 export const siteConfig = {
   name: "UpdateFlow",
   description: "Stay up to date with our latest updates and improvements",
-  url: "https://github.com/mywildancloud/updateflow",
+  url: "https://update-flow.vercel.app/",
   nav: {
     main: [
       {
