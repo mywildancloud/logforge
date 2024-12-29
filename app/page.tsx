@@ -42,7 +42,7 @@ export default function HomePage() {
   return (
     <><main className="mx-auto max-w-[1300px]">
       {/* Hero Section */}
-      <section className="space-y-6 pb-8 pt-6 py-12 px-4 md:pb-12 md:pt-10 lg:py-32">
+      <section className="space-y-6 py-32 px-4">
         <div className="container flex max-w-[64rem] flex-col items-center gap-4 text-center mx-auto">
           <h1 className="font-bold text-3xl sm:text-5xl md:text-6xl lg:text-7xl">
             Simplify Your Project Updates with{" "}
@@ -71,7 +71,7 @@ export default function HomePage() {
       {/* Features Section */}
       <section
         id="features"
-        className="container space-y-6 bg-slate-50 py-12 px-4 dark:bg-transparent md:py-20"
+        className="container space-y-6 bg-slate-50 py-20 px-4"
       >
         <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
           <h2 className="font-bold text-3xl leading-[1.1] sm:text-3xl md:text-6xl">
