@@ -55,7 +55,7 @@ export default function HomePage() {
           <div className="grid grid-col-2 gap-4 sm:flex">
             <Button size="lg" asChild>
               <Link href="/changelog">
-                View a Demo
+                Release Note
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
