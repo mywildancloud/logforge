@@ -26,7 +26,7 @@ export function ChangelogFilter({ currentFilter, onFilterChange }: ChangelogFilt
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="outline" className="w-[140px] justify-between">
+        <Button variant="outline" className="w-[160px] justify-between">
           <Filter className="mr-2 h-4 w-4" />
           {filters.find(f => f.value === currentFilter)?.label || "Filter"}
         </Button>
