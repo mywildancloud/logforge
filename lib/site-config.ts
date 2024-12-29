@@ -1,9 +1,9 @@
 import { NavigationItem } from "./types";
 
 export const siteConfig = {
-  name: "ReviseLog",
+  name: "UpdateFlow",
   description: "Stay up to date with our latest updates and improvements",
-  url: "https://logforge.dev",
+  url: "https://github.com/mywildancloud/updateflow",
   nav: {
     main: [
       {

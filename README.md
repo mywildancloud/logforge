@@ -1,6 +1,6 @@
-# ReviseLog
+# UpdateFlow
 
-ReviseLog is a modern and efficient logging tool designed to streamline the process of monitoring and managing application logs.
+UpdateFlow is a modern and efficient logging tool designed to streamline the process of monitoring and managing application logs.
 
 ---
 
@@ -28,21 +28,21 @@ ReviseLog is a modern and efficient logging tool designed to streamline the proc
 
 ## Installation
 
-Follow these steps to install and run ReviseLog:
+Follow these steps to install and run UpdateFlow:
 
 ### 1. Clone the Repository
 
 ```bash
 # Clone the repository to your local machine
-git clone https://github.com/mywildancloud/reviselog.git
+git clone https://github.com/mywildancloud/updateflow.git
 
 # Navigate into the project directory
-cd reviselog
+cd updateflow
 ```
 
 ### 2. Install Dependencies
 
-ReviseLog requires Node.js (v16 or higher). Install the dependencies using your package manager:
+UpdateFlow requires Node.js (v16 or higher). Install the dependencies using your package manager:
 
 ```bash
 # Install dependencies using npm
@@ -56,9 +56,10 @@ pnpm install
 
 ## Running Locally
 
-To run ReviseLog on your local machine:
+To run UpdateFlow on your local machine:
 
 1. **Start the Development Server**
+
    ```bash
    npm run dev
    ```
@@ -70,28 +71,31 @@ To run ReviseLog on your local machine:
 
 ## Deploying to Vercel
 
-Deploy ReviseLog to Vercel for production use:
+Deploy UpdateFlow to Vercel for production use:
 
 1. **Create a Vercel Account**
    Sign up or log in to [Vercel](https://vercel.com/).
 
 2. **Import the Project**
+
    - Go to the Vercel dashboard.
-   - Click on `New Project` and import the `reviselog` repository from GitHub.
+   - Click on `New Project` and import the `UpdateFlow` repository from GitHub.
 
 3. **Deploy**
-   Click on `Deploy` to start the deployment process. Once deployed, you will get a production URL to access ReviseLog.
+   Click on `Deploy` to start the deployment process. Once deployed, you will get a production URL to access UpdateFlow.
 
 ---
 
 ## Additional Commands
 
 - **Build for Production**
+
   ```bash
   npm run build
   ```
 
 - **Start Production Server**
+
   ```bash
   npm start
   ```
@@ -105,7 +109,7 @@ Deploy ReviseLog to Vercel for production use:
 
 ## Contributing
 
-Contributions are welcome! If you'd like to contribute to ReviseLog, please:
+Contributions are welcome! If you'd like to contribute to UpdateFlow, please:
 
 1. Fork the repository.
 2. Create a new branch for your feature or fix.
@@ -121,5 +125,4 @@ This project is licensed under the MIT License. See the [LICENSE](./LICENSE) fil
 
 ## Support
 
-For support or questions, please open an issue in the [GitHub repository](https://github.com/mywildancloud/reviselog/issues) or contact the maintainer directly.
-
+For support or questions, please open an issue in the [GitHub repository](https://github.com/mywildancloud/UpdateFlow/issues) or contact the maintainer directly.
