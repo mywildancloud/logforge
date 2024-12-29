@@ -1,7 +1,7 @@
 import { NavigationItem } from "./types";
 
 export const siteConfig = {
-  name: "Logforge",
+  name: "ReviseLog",
   description: "Stay up to date with our latest updates and improvements",
   url: "https://logforge.dev",
   nav: {
