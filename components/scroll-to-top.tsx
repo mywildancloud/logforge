@@ -13,7 +13,7 @@ export function ScrollToTop() {
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
-      const show = scrollY > 500;
+      const show = scrollY > 300;
       setShow(show);
 
       // Calculate scroll progress
