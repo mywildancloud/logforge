@@ -44,7 +44,7 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="space-y-6 py-32 px-4">
         <div className="container flex max-w-[64rem] flex-col items-center gap-4 text-center mx-auto">
-          <h1 className="font-bold text-2xl sm:text-5xl md:text-6xl lg:text-7xl">
+          <h1 className="font-bold text-2xl sm:text-5xl md:text-6xl">
             Simplify Your Project Updates with{" "}
             <span className="text-green-600">UpdateFlow</span>
           </h1>
@@ -74,7 +74,7 @@ export default function HomePage() {
         className="container space-y-6 bg-slate-50 dark:bg-transparent py-20 px-4"
       >
         <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
-          <h2 className="font-bold text-2xl leading-[1.1] sm:text-3xl md:text-6xl lg:text-7xl">
+          <h2 className="font-bold text-2xl leading-[1.1] sm:text-3xl md:text-6xl">
             Key Features
           </h2>
           <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
